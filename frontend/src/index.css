@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Edges */
+.react-flow__edge-path {
+  stroke: #6366f1 !important;
+  stroke-width: 2px !important;
+}
+
+.react-flow__connection-path {
+  stroke: #6366f1 !important;
+  stroke-width: 2px !important;
+}
+
+/* Handles */
+.react-flow__handle {
+  width: 10px !important;
+  height: 10px !important;
+  background: #6366f1 !important;
+  border: 2px solid #0f1117 !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.react-flow__handle:hover {
+  transform: scale(1.4) !important;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.8) !important;
+}
+
+/* Selected node highlight */
+.react-flow__node.selected > div {
+  box-shadow: 0 0 0 2px #6366f1, 0 0 20px rgba(99, 102, 241, 0.3) !important;
+}
+
+/* Controls */
+.react-flow__controls {
+  background: #1a1f2e !important;
+  border: 1px solid #2d3452 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+.react-flow__controls-button {
+  background: #1a1f2e !important;
+  border-bottom: 1px solid #2d3452 !important;
+  fill: #e2e8f0 !important;
+  transition: background 0.2s ease !important;
+}
+
+.react-flow__controls-button:hover {
+  background: #2d3452 !important;
+}
+
+/* Minimap */
+.react-flow__minimap {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+.react-flow__minimap-mask {
+  fill: rgba(15, 17, 23, 0.7) !important;
+}
