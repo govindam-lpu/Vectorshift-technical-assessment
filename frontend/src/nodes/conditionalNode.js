@@ -7,7 +7,7 @@ export const ConditionalNode = ({ id }) => {
 
   return (
     <BaseNode
-      title="Condition / If"
+      title="Conditional"
       handles={[
         { type: 'target', position: Position.Left, id: `${id}-input` },
         { type: 'source', position: Position.Right, id: `${id}-true`, style: { top: '33%' } },

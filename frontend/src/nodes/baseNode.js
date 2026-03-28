@@ -10,7 +10,7 @@ const nodeAccentColors = {
   'Webhook/API Integration': '#14b8a6',
   'Prompt Optimizer': '#8b5cf6',
   'Parse JSON Data': '#f97316',
-  'Condition / If': '#ef4444',
+  'Conditional': '#ef4444',
 };
 
 export const BaseNode = ({ title, handles = [], children, style = {} }) => {
