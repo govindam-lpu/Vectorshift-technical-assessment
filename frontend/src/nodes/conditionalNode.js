@@ -9,9 +9,23 @@ export const ConditionalNode = ({ id }) => {
     <BaseNode
       title="Conditional"
       handles={[
-        { type: 'target', position: Position.Left, id: `${id}-input` },
-        { type: 'source', position: Position.Right, id: `${id}-true`, style: { top: '33%' } },
-        { type: 'source', position: Position.Right, id: `${id}-false`, style: { top: '66%' } },
+        { 
+          type: 'target', 
+          position: Position.Left, 
+          id: `${id}-input` 
+        },
+        { 
+          type: 'source', 
+          position: Position.Right, 
+          id: `${id}-true`, 
+          style: { top: '33%' } 
+        },
+        { 
+          type: 'source', 
+          position: Position.Right, 
+          id: `${id}-false`, 
+          style: { top: '66%' } 
+        },
       ]}
     >
       <NodeField label="Condition">

@@ -9,9 +9,23 @@ export const MathNode = ({ id }) => {
     <BaseNode
       title="Math Operation"
       handles={[
-        { type: 'target', position: Position.Left, id: `${id}-number1`, style: { top: '33%' } },
-        { type: 'target', position: Position.Left, id: `${id}-number2`, style: { top: '66%' } },
-        { type: 'source', position: Position.Right, id: `${id}-result` },
+        { 
+          type: 'target', 
+          position: Position.Left, 
+          id: `${id}-number1`, 
+          style: { top: '33%' } 
+        },
+        { 
+          type: 'target', 
+          position: Position.Left, 
+          id: `${id}-number2`, 
+          style: { top: '66%' } 
+        },
+        { 
+          type: 'source', 
+          position: Position.Right, 
+          id: `${id}-result` 
+        },
       ]}
     >
       <NodeField label="Operation">

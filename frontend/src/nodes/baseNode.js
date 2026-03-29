@@ -1,6 +1,8 @@
 import { Handle } from 'reactflow';
 import { motion } from 'framer-motion';
 
+
+//each node get's their own colors from here
 const nodeAccentColors = {
   'Input': '#6366f1',
   'Output': '#10b981',
@@ -13,6 +15,7 @@ const nodeAccentColors = {
   'Conditional': '#ef4444',
 };
 
+//title, handles, children and style are passed for the specific node type
 export const BaseNode = ({ title, handles = [], children, style = {} }) => {
   const accent = nodeAccentColors[title] || '#6366f1';
 
@@ -23,8 +26,8 @@ export const BaseNode = ({ title, handles = [], children, style = {} }) => {
       transition={{ duration: 0.2, ease: 'easeOut' }}
       className="bg-white rounded-xl shadow-lg border border-slate-200 min-w-[200px] font-inter overflow-visible"
       style={{ borderLeft: `3px solid ${accent}`, ...style }}
-    >
-      {/* Header */}
+>
+      {/* header */}
       <div className="flex items-center gap-2 px-3 py-2 border-b border-slate-100">
         <div
           className="w-2 h-2 rounded-full"
@@ -35,12 +38,12 @@ export const BaseNode = ({ title, handles = [], children, style = {} }) => {
         </span>
       </div>
 
-      {/* Body */}
+      {/* body */}
       <div className="px-3 py-2.5 flex flex-col gap-2">
         {children}
       </div>
 
-      {/* Handles */}
+      {/* handles */}
       {handles.map((handle, index) => (
         <Handle
           key={handle.id || index}
@@ -54,12 +57,12 @@ export const BaseNode = ({ title, handles = [], children, style = {} }) => {
   );
 };
 
-// Reusable field components for nodes
+// reusable field components for nodes
 export const NodeField = ({ label, children }) => (
   <div className="flex flex-col gap-1">
     <label className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
       {label}
-    </label>
+    </label>  
     {children}
   </div>
 );

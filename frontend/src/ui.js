@@ -38,7 +38,7 @@ const selector = (state) => ({
   onConnect: state.onConnect,
 });
 
-// minimap node colors matching accent system
+// matching minimap node colors
 const nodeColors = {
   customInput: '#6366f1',
   customOutput: '#10b981',

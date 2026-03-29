@@ -9,8 +9,14 @@ export const PromptNode = ({ id }) => {
     <BaseNode
       title="Prompt Optimizer"
       handles={[
-        { type: 'target', position: Position.Left, id: `${id}-rawprompt` },
-        { type: 'source', position: Position.Right, id: `${id}-optimizedprompt` },
+        { 
+          type: 'target', 
+          position: Position.Left, 
+          id: `${id}-rawprompt` },
+        { 
+          type: 'source', 
+          position: Position.Right, 
+          id: `${id}-optimizedprompt` },
       ]}
     >
       <NodeField label="Optimization Goal">

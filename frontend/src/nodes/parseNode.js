@@ -9,8 +9,16 @@ export const ParseNode = ({ id }) => {
     <BaseNode
       title="Parse JSON Data"
       handles={[
-        { type: 'target', position: Position.Left, id: `${id}-json` },
-        { type: 'source', position: Position.Right, id: `${id}-parsed` },
+        { 
+          type: 'target', 
+          position: Position.Left, 
+          id: `${id}-json` 
+        },
+        { 
+          type: 'source', 
+          position: Position.Right, 
+          id: `${id}-parsed` 
+        },
       ]}
     >
       <NodeField label="Key to Extract">

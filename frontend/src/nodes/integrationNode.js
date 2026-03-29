@@ -10,8 +10,16 @@ export const IntegrationNode = ({ id }) => {
     <BaseNode
       title="Webhook/API Integration"
       handles={[
-        { type: 'target', position: Position.Left, id: `${id}-data` },
-        { type: 'source', position: Position.Right, id: `${id}-response` },
+        { 
+          type: 'target', 
+          position: Position.Left, 
+          id: `${id}-data` 
+        },
+        { 
+          type: 'source', 
+          position: Position.Right, 
+          id: `${id}-response` 
+        },
       ]}
     >
       <NodeField label="URL">

@@ -9,7 +9,13 @@ export const OutputNode = ({ id, data }) => {
   return (
     <BaseNode
       title="Output"
-      handles={[{ type: 'target', position: Position.Left, id: `${id}-value` }]}
+      handles={[
+        { 
+          type: 'target', 
+          position: Position.Left, 
+          id: `${id}-value` 
+        }
+      ]}
     >
       <NodeField label="Name">
         <NodeInput value={currName} onChange={(e) => setCurrName(e.target.value)} />
